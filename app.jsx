@@ -35,20 +35,9 @@ class About extends React.Component {
   }
 }
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <Router history={this.props.history}>
-        <Route path="/" component={Layout}>
-          <Route path="home" component={Home} />
-          <Route path="about" component={About} />
-        </Route>
-      </Router>
-    )
-  }
-}
-
-// Static initializers are ES7
-App.propTypes = {
-  history: React.PropTypes.object
-}
+export default (
+  <Route path="/" component={Layout}>
+    <Route path="home" component={Home} />
+    <Route path="about" component={About} />
+  </Route>
+)
