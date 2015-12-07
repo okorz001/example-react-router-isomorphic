@@ -11,7 +11,8 @@ server.use('/public', express.static('build'))
 const createApp = React.createFactory(App)
 
 server.use((req, res, next) => {
-  const body = ReactDOM.renderToString(createApp())
+  const body = ""
+  //const body = ReactDOM.renderToString(createApp())
 
   const html = `
   <!DOCTYPE html>
