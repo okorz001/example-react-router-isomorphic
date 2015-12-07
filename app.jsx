@@ -1,17 +1,6 @@
 import React from 'react'
 import { Router, Route, Link } from 'react-router'
 
-class Layout extends React.Component {
-  render() {
-    return (
-      <div>
-        <Nav />
-        {this.props.children}
-      </div>
-    )
-  }
-}
-
 class Nav extends React.Component {
   render() {
     return (
@@ -19,6 +8,17 @@ class Nav extends React.Component {
         <li><Link to="/home">Home</Link></li>
         <li><Link to="/about">About</Link></li>
       </ul>
+    )
+  }
+}
+
+class Layout extends React.Component {
+  render() {
+    return (
+      <div>
+        <Nav />
+        {this.props.children}
+      </div>
     )
   }
 }
