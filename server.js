@@ -3,7 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/server'
 import { match, RoutingContext } from 'react-router'
 
-import routes from './app.jsx'
+import routes from './routes.jsx'
 
 const server = express()
 
